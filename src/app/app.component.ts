@@ -15,7 +15,6 @@ export class AppComponent{
   constructor(public dialog:MatDialog){}
   
   openMsg() {
-    alert("123");
     MessageBox.show(this.dialog);
   }
 }
