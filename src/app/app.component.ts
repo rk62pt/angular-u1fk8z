@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
 import { CusMessageComponent } from './cus-message/cus-message.component';
-import { MessageBox } from './cus-message/message-box';
+import { MessageBox } from './message-box';
 
 
 @Component({

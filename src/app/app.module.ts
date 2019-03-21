@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { MatDialogModule, MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -15,6 +15,9 @@ import { CusMessageComponent } from './cus-message/cus-message.component';
   declarations: [ AppComponent, HelloComponent, CusMessageComponent],
   entryComponents: [
     CusMessageComponent
+  ],
+  providers: [
+    {provide: MAT_DIALOG_DATA, useValue: {}}
   ],
   bootstrap:[ AppComponent ]
 })
